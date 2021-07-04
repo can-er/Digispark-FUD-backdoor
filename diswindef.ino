@@ -1,6 +1,7 @@
 #include <DigiKeyboardFr.h>
 /*
  * Tested on:
+ * AZERTY French Keyboard
  * Microsoft Windows 10 Professionnel - 10.0.19042 N/A Build 19042
  * Microsoft Windows 10 Home          - 10.0.19042 N/A Build 19042
  * 
